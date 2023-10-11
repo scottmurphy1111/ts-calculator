@@ -30,7 +30,7 @@
 	$: weeklyTotal = (($price * fee) / ($term * (52.18 - 8))).toFixed(2);
 </script>
 
-<div class="w-full h-screen gap-12 flex flex-col justify-center items-center">
+<div class="w-full h-screen gap-12 flex flex-col justify-center items-center p-4">
 	<h2 class="text-xl">Estimated Weekly Payment Calculator</h2>
 	<div class="border-2 border-ts-gray-md p-8 rounded-xl shadow-md">
 		<a class="block mb-12" href="/">
@@ -63,7 +63,7 @@
 					</span>
 				</div>
 				<span
-					class="font-medium flex w-[325px] text-ts-blue text-xs italic leading-tight tracking-tight antialiased"
+					class="font-medium flex max-w-[325px] text-ts-blue text-xs italic leading-tight tracking-tight antialiased"
 					>* This is an estimate. Final payment amount subject to credit approval and may differ
 					from above calculation.</span
 				>
