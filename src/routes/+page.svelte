@@ -39,9 +39,9 @@
 				</select>
 			</label>
 			<div>
-				<span class="font-semibold mb-2 flex">Your estimated weekly payment amount is:</span>
-				<div class="w-full flex flex-col font-semibold mb-4">
-					<span class="w-full inline-flex justify-end border-b-2 border-black text-right ml-auto">
+				<span class="font-medium mb-2 flex">Your estimated weekly payment amount is:</span>
+				<div class="w-full flex flex-col font-semibold mb-4 text-center">
+					<span class="w-full inline-flex text-4xl justify-center">
 						${weeklyTotal}*
 					</span>
 				</div>
