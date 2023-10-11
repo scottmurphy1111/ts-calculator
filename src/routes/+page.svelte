@@ -5,12 +5,29 @@
 	import { writable } from 'svelte/store';
 
 	const price = writable(1000);
-	const term = writable(12);
-	const termOptions = [12, 24, 36, 48];
-	const fee = 1.21999;
+	const term = writable(1);
+	const termOptions = [
+		{
+			year: 1,
+			label: '12'
+		},
+		{
+			year: 2,
+			label: '24'
+		},
+		{
+			year: 3,
+			label: '36'
+		},
+		{
+			year: 4,
+			label: '48'
+		}
+	];
+	const fee = 1.219999;
 	let weeklyTotal = '';
 
-	$: weeklyTotal = (($price * fee) / ($term - 2) / 4).toFixed(2);
+	$: weeklyTotal = (($price * fee) / ($term * (52.18 - 8))).toFixed(2);
 </script>
 
 <div class="w-full h-screen gap-12 flex flex-col justify-center items-center">
@@ -34,7 +51,7 @@
 				>Term Length
 				<select class="border border-ts-gray-md rounded py-3 px-4" bind:value={$term}>
 					{#each termOptions as option}
-						<option value={option}>{option} Months</option>
+						<option value={option.year}>{option.label} Months</option>
 					{/each}
 				</select>
 			</label>
