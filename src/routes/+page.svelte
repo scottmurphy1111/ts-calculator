@@ -64,8 +64,8 @@
 				</div>
 				<span
 					class="font-medium flex max-w-[325px] text-ts-blue text-xs italic leading-tight tracking-tight antialiased"
-					>* This is an estimate. Final payment amount subject to credit approval and may differ
-					from above calculation.</span
+					>* This is an estimate. The final weekly payment amount is based upon credit history,
+					subject to credit approval and may differ from the above calculation.</span
 				>
 			</div>
 		</div>
